@@ -1,0 +1,8 @@
+this is a text file use to test the GIT commands
+
+
+line 1
+
+line 2
+
+line 3
