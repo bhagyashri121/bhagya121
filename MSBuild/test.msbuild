@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+    ToolsVersion="4.5"
+    DefaultTargets="Build">
+
+    <PropertyGroup>
+	    <!-- values passed by TeamCity / Jenkins -->
+		<ProjectDir>$(project-dir)</ProjectDir>
+		
+		
+        <OutputDir>$(project-output-dir)</OutputDir>
+		<BuildConfiguration>Release</BuildConfiguration>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectToBuild Include="$(project-dir)\trunk\MVCAnalytics.sln">
+            <Properties>OutputPath=$(OutputDir);Configuration=$(BuildConfiguration)</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)" />
+    </Target>
+
+</Project>
