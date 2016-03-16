@@ -14,7 +14,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectToBuild Include="$(project-dir)\trunk\MVCAnalytics.sln">
+        <ProjectToBuild Include="D:\bhagyashri_git\bhagya121\MVCAnalytics\MVCAnalytics.sln">
             <Properties>OutputPath=$(OutputDir);Configuration=$(BuildConfiguration)</Properties>
         </ProjectToBuild>
     </ItemGroup>
@@ -24,3 +24,4 @@
     </Target>
 
 </Project>
+
